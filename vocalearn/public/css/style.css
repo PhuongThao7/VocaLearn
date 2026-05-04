@@ -1,0 +1,52 @@
+/* Custom CSS bổ sung cho Tailwind */
+
+/* Hiệu ứng nảy (Bounce) */
+.bounce-hover:hover {
+    animation: bounce 0.5s;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 3D Flip Card */
+.perspective-1000 {
+    perspective: 1000px;
+}
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+.backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+/* Animation Fade In */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar đẹp hơn */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
